@@ -34,13 +34,10 @@ jobs:
     - name: Build and push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-         image:
-         registry:docker.io
-         username:${{secrets.username }}
-         password:${{secrets.password }}
+         image: sireesha03/sirimini-pro2
+         registry: docker.io
+         username: ${{secrets.username }}
+         password: ${{secrets.password }}
 
 
-    # Generates and submits a dependency graph, enabling Dependabot Alerts for all project dependencies.
-    # See: https://github.com/gradle/actions/blob/main/dependency-submission/README.md
-    - name: Generate and submit dependency graph
-      uses: gradle/actions/dependency-submission@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
+    
